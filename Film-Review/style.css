@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Golos Text', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  background-image: url("./stage\ curtains.jpeg");
+}
+form, #submitText{
+  background-color: #ffffff88;
+  border: 20px solid #ffffff00;
+  border-radius: 25px;
+}

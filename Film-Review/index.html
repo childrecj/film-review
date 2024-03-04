@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Film Review</title>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <form action="./submit.html" method="GET">
+      <h1 id="header">Film Review</h1>
+
+
+      <div id="nameDiv">
+        <label for="name">Series Name</label>
+        <input type="text" name="seriesName" id="nameInput" required>
+      </div>
+      <br><br>
+
+
+      <div id="typeDiv">
+        <p>What type of film is it?</p>
+
+
+        <label for="movieTypeInput">Movie</label>
+        <input type="radio" id="movieTypeInput" value="Movie" name="select">
+
+
+        <label for="tvShowTypeInput">Tv Show</label>
+        <input type="radio" id="tvShowTypeInput" value="TvShow" name="select">
+
+
+        <label for="otherTypeInput">Other</label>
+        <input type="radio" id="otherTypeInput" value="Other" name="select">
+      </div>
+      <br><br>
+
+
+      <div id="seasonsDiv">
+        <label for="seasons">How many films or seasons?</label>
+        <input type="number" name="seasons" id="seasonsInput" min=1 max=20>
+      </div>
+      <br><br>
+
+
+      <div id="genreDiv">
+        <p>What genre?</p>
+
+
+        <label for="comedyInput">Comedy</label>
+        <input type="checkbox" id="comedyInput" value="Comedy" name="genre">
+
+
+        <label for="romanceInput">Romance</label>
+        <input type="checkbox" id="romanceInput" value="Romance" name="genre">
+
+
+        <label for="scifiInput">SciFi</label>
+        <input type="checkbox" id="scifiInput" value="SciFi" name="genre">
+
+        
+        <label for="solInput">Slice of Life</label>
+        <input type="checkbox" id="solInput" value="SliceOfLife" name="genre">
+
+
+        <label for="horrorInput">Horror</label>
+        <input type="checkbox" id="horrorInput" value="Horror" name="genre">
+
+
+        <label for="otherGenreInput">Other</label>
+        <input type="checkbox" id="otherGenreInput" value="Other" name="genre">
+      </div>
+      <br><br>
+
+
+      <div id="statusDiv">
+        <label for="status">Status?</label>
+        <select id="status" name="status">
+          <option value="Ongoing">On-Going</option>
+          <option value="Finished">Finished</option>
+          <option value="Canceled">Canceled</option>
+        </select>
+      </div>
+      <br><br>
+
+      
+      <div id="summaryDiv">
+        <label for="summaryInput">Summary</label>
+        <textarea id="summaryInput" name="summary" rows="5" cols="30" maxlength="200"></textarea>
+      </div>
+      <br><br>
+
+
+      <div id="recommendDiv">
+        <label for="recommendInput">Is this film good? (Its the worst <--> Its the best)</label>
+        <input type="range" id="recommendInput" name="recomment">
+      </div>
+      <br><br>
+
+      <input type="submit">
+    </form>
+  </body>
+</html>
